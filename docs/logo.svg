@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <title>netmeter</title>
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#232a38"/>
+      <stop offset="1" stop-color="#0d1016"/>
+    </linearGradient>
+  </defs>
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#tile)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="2"/>
+  <g transform="translate(512 536)">
+    <rect x="-12" y="-236.33" width="24" height="76.33" rx="12" fill="#3987e5" transform="rotate(-135)"/>
+    <rect x="-12" y="-278.69" width="24" height="34.37" rx="12" fill="#eb6834" transform="rotate(-135)"/>
+    <rect x="-12" y="-241.84" width="24" height="81.84" rx="12" fill="#3987e5" transform="rotate(-123.26)"/>
+    <rect x="-12" y="-282.94" width="24" height="33.1" rx="12" fill="#eb6834" transform="rotate(-123.26)"/>
+    <rect x="-12" y="-234.03" width="24" height="74.03" rx="12" fill="#3987e5" transform="rotate(-111.52)"/>
+    <rect x="-12" y="-266.7" width="24" height="24.68" rx="12" fill="#eb6834" transform="rotate(-111.52)"/>
+    <rect x="-12" y="-230.38" width="24" height="70.38" rx="12" fill="#3987e5" transform="rotate(-99.78)"/>
+    <rect x="-12" y="-262.38" width="24" height="24" rx="12" fill="#eb6834" transform="rotate(-99.78)"/>
+    <rect x="-12" y="-206.01" width="24" height="46.01" rx="12" fill="#3987e5" transform="rotate(-88.04)"/>
+    <rect x="-12" y="-238.01" width="24" height="24" rx="12" fill="#eb6834" transform="rotate(-88.04)"/>
+    <rect x="-12" y="-219.18" width="24" height="59.18" rx="12" fill="#3987e5" transform="rotate(-76.3)"/>
+    <rect x="-12" y="-251.18" width="24" height="24" rx="12" fill="#eb6834" transform="rotate(-76.3)"/>
+    <rect x="-12" y="-217.87" width="24" height="57.87" rx="12" fill="#3987e5" transform="rotate(-64.57)"/>
+    <rect x="-12" y="-249.87" width="24" height="24" rx="12" fill="#eb6834" transform="rotate(-64.57)"/>
+    <rect x="-12" y="-229.34" width="24" height="69.34" rx="12" fill="#3987e5" transform="rotate(-52.83)"/>
+    <rect x="-12" y="-269.39" width="24" height="32.05" rx="12" fill="#eb6834" transform="rotate(-52.83)"/>
+    <rect x="-12" y="-248.12" width="24" height="88.12" rx="12" fill="#3987e5" transform="rotate(-41.09)"/>
+    <rect x="-12" y="-283.16" width="24" height="27.04" rx="12" fill="#eb6834" transform="rotate(-41.09)"/>
+    <rect x="-12" y="-255.53" width="24" height="95.53" rx="12" fill="#3987e5" transform="rotate(-29.35)"/>
+    <rect x="-12" y="-300.23" width="24" height="36.7" rx="12" fill="#eb6834" transform="rotate(-29.35)"/>
+    <rect x="-12" y="-258.89" width="24" height="98.89" rx="12" fill="#3987e5" transform="rotate(-17.61)"/>
+    <rect x="-12" y="-311.19" width="24" height="44.31" rx="12" fill="#eb6834" transform="rotate(-17.61)"/>
+    <rect x="-12" y="-260.5" width="24" height="100.5" rx="12" fill="#3987e5" transform="rotate(-5.87)"/>
+    <rect x="-12" y="-305.05" width="24" height="36.55" rx="12" fill="#eb6834" transform="rotate(-5.87)"/>
+    <rect x="-12" y="-270.93" width="24" height="110.93" rx="12" fill="#3987e5" transform="rotate(5.87)"/>
+    <rect x="-12" y="-309.18" width="24" height="30.25" rx="12" fill="#eb6834" transform="rotate(5.87)"/>
+    <rect x="-12" y="-287.62" width="24" height="127.62" rx="12" fill="#3987e5" transform="rotate(17.61)"/>
+    <rect x="-12" y="-324.6" width="24" height="28.98" rx="12" fill="#eb6834" transform="rotate(17.61)"/>
+    <rect x="-12" y="-271.24" width="24" height="111.24" rx="12" fill="#3987e5" transform="rotate(29.35)"/>
+    <rect x="-12" y="-319.9" width="24" height="40.66" rx="12" fill="#eb6834" transform="rotate(29.35)"/>
+    <rect x="-12" y="-270.88" width="24" height="110.88" rx="12" fill="#3987e5" transform="rotate(41.09)"/>
+    <rect x="-12" y="-330.39" width="24" height="51.51" rx="12" fill="#eb6834" transform="rotate(41.09)"/>
+    <rect x="-12" y="-288.01" width="24" height="128.01" rx="12" fill="#3987e5" transform="rotate(52.83)"/>
+    <rect x="-12" y="-348.61" width="24" height="52.59" rx="12" fill="#eb6834" transform="rotate(52.83)"/>
+    <rect x="-12" y="-301.45" width="24" height="141.45" rx="12" fill="#3987e5" transform="rotate(64.57)"/>
+    <rect x="-12" y="-357.22" width="24" height="47.77" rx="12" fill="#eb6834" transform="rotate(64.57)"/>
+    <rect x="-12" y="-300.87" width="24" height="140.87" rx="12" fill="#3987e5" transform="rotate(76.3)"/>
+    <rect x="-12" y="-346.17" width="24" height="37.3" rx="12" fill="#eb6834" transform="rotate(76.3)"/>
+    <rect x="-12" y="-287.21" width="24" height="127.21" rx="12" fill="#3987e5" transform="rotate(88.04)"/>
+    <rect x="-12" y="-344.63" width="24" height="49.43" rx="12" fill="#eb6834" transform="rotate(88.04)"/>
+    <rect x="-12" y="-267.98" width="24" height="107.98" rx="12" fill="#3987e5" transform="rotate(99.78)"/>
+    <rect x="-12" y="-318.11" width="24" height="42.14" rx="12" fill="#eb6834" transform="rotate(99.78)"/>
+    <rect x="-12" y="-261.1" width="24" height="101.1" rx="12" fill="#3987e5" transform="rotate(111.52)"/>
+    <rect x="-12" y="-301.44" width="24" height="32.34" rx="12" fill="#eb6834" transform="rotate(111.52)"/>
+    <rect x="-12" y="-269" width="24" height="109" rx="12" fill="#3987e5" transform="rotate(123.26)"/>
+    <rect x="-12" y="-304.65" width="24" height="27.65" rx="12" fill="#eb6834" transform="rotate(123.26)"/>
+    <rect x="-12" y="-263.94" width="24" height="103.94" rx="12" fill="#3987e5" transform="rotate(135)"/>
+    <rect x="-12" y="-296.42" width="24" height="24.47" rx="12" fill="#eb6834" transform="rotate(135)"/>
+    <line x1="0" y1="0" x2="0" y2="-126" stroke="#f0efec" stroke-width="22" stroke-linecap="round" transform="rotate(40)"/>
+    <circle r="36" fill="#f0efec"/>
+    <circle r="14" fill="#0d1016"/>
+  </g>
+</svg>
