@@ -2,7 +2,8 @@
 name = "netmeter"
 version = "0.1.0"
 description = "Per-app network usage history for macOS"
-authors = ["you"]
+authors = ["farukcan"]
+license = "MIT"
 edition = "2024"
 default-run = "netmeter"
 
