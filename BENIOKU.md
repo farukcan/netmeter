@@ -1,5 +1,7 @@
 # netmeter
 
+[English](README.md) · **Türkçe**
+
 macOS için uygulama bazında internet kullanım geçmişi. Arka planda çalışan bir collector, her uygulamanın günlük indirme/gönderme miktarını SQLite'a yazar; Tauri + React arayüzü aylık tabloyu, günlük grafiği ve uygulama detayını gösterir. GUI kapalıyken de veri toplanır.
 
 ## Mimari
@@ -37,3 +39,7 @@ cargo test --manifest-path src-tauri/Cargo.toml
 cargo clippy --all-targets --manifest-path src-tauri/Cargo.toml
 pnpm build
 ```
+
+## Lisans
+
+[MIT](LICENSE) © 2026 Faruk CAN
