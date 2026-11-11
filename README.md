@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/logo.svg" alt="netmeter logo" width="128" height="128">
+</p>
+
 <h1 align="center">netmeter</h1>
 
 <p align="center">
@@ -35,6 +39,15 @@
 
 <p align="center">
   <b>English</b> · <a href="BENIOKU.md">Türkçe</a>
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/screenshot-overview-dark.png">
+    <img src="docs/screenshot-overview-light.png" alt="netmeter monthly overview: total, downloaded and uploaded tiles, a daily traffic chart with a tooltip and the per-app table" width="820">
+  </picture>
+  <br>
+  <sub>Monthly overview (demo data)</sub>
 </p>
 
 ---
@@ -92,7 +105,7 @@ flowchart LR
 | --- | --- |
 | macOS | Uses `nettop`, `launchd` and `proc_pidpath`; other platforms are not supported |
 | [Rust](https://www.rust-lang.org/tools/install) | 1.85 or newer (2024 edition) |
-| [Node.js](https://nodejs.org/) | 20.19+ or 22.12+ |
+| [Node.js](https://nodejs.org/) | 20.19+ or 22.12+ (22.18+ for `pnpm logo`) |
 | [pnpm](https://pnpm.io/installation) | 10 or newer |
 | Xcode Command Line Tools | `xcode-select --install` |
 
@@ -116,6 +129,15 @@ The app bundle is written to `src-tauri/target/release/bundle/macos/netmeter.app
 1. Open **netmeter**.
 2. Click **Başlat** (start). The app copies the collector to `~/Library/Application Support/netmeter/` and loads it with `~/Library/LaunchAgents/local.netmeter.collector.plist`.
 3. The first data appears in about 30 seconds. Pick a month from the selector and click an app to see its daily traffic.
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/screenshot-app-dark.png">
+    <img src="docs/screenshot-app-light.png" alt="netmeter app detail view: Google Chrome's monthly totals and daily traffic chart" width="820">
+  </picture>
+  <br>
+  <sub>App detail view (demo data)</sub>
+</p>
 
 The collector keeps running when the app is closed and starts again at every login. **Durdur** (stop) unloads and removes the LaunchAgent; collected data is kept.
 
@@ -162,10 +184,21 @@ cargo clippy --all-targets --manifest-path src-tauri/Cargo.toml
 pnpm build   # type-checks with tsc, then builds the frontend
 ```
 
+### Logo and app icons
+
+The logo is generated procedurally by [`scripts/generate-logo.ts`](scripts/generate-logo.ts): 24 hourly download/upload bars on a seeded daily traffic curve, fanned around a gauge needle. One command rewrites `docs/logo.svg` and regenerates every icon in `src-tauri/icons/` from it:
+
+```sh
+pnpm logo   # needs Node.js 22.18+ to run TypeScript directly
+```
+
 ## Project Structure
 
 ```text
 netmeter/
+├── docs/                         # Logo and screenshots used by the READMEs
+├── scripts/
+│   └── generate-logo.ts          # Procedural logo generator (pnpm logo)
 ├── src/                          # React frontend
 │   ├── App.tsx                   # Month selector, stat tiles, app detail view
 │   ├── AppTable.tsx              # Per-app usage table

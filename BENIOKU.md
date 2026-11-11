@@ -1,8 +1,21 @@
+<p align="center">
+  <img src="docs/logo.svg" alt="netmeter logosu" width="128" height="128">
+</p>
+
 # netmeter
 
 [English](README.md) · **Türkçe**
 
 macOS için uygulama bazında internet kullanım geçmişi. Arka planda çalışan bir collector, her uygulamanın günlük indirme/gönderme miktarını SQLite'a yazar; Tauri + React arayüzü aylık tabloyu, günlük grafiği ve uygulama detayını gösterir. GUI kapalıyken de veri toplanır.
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/screenshot-overview-dark.png">
+    <img src="docs/screenshot-overview-light.png" alt="netmeter aylık görünüm: toplam, indirilen ve gönderilen kutuları, tooltip'li günlük trafik grafiği ve uygulama tablosu" width="820">
+  </picture>
+  <br>
+  <sub>Aylık görünüm (demo veri)</sub>
+</p>
 
 ## Mimari
 
@@ -31,6 +44,25 @@ pnpm tauri build --bundles app     # src-tauri/target/release/bundle/macos/netme
 ```
 
 Uygulamada **Başlat** butonu collector'ı `~/Library/Application Support/netmeter/` altına kopyalar ve `~/Library/LaunchAgents/local.netmeter.collector.plist` ile yükler; login'de otomatik başlar, çökerse launchd yeniden başlatır. **Durdur** LaunchAgent'ı kaldırır, toplanan veri kalır. Collector hataları `~/Library/Application Support/netmeter/collector.log` dosyasına yazılır.
+
+Tablodaki bir uygulamaya tıklayınca o uygulamanın aylık toplamları ve günlük grafiği açılır:
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/screenshot-app-dark.png">
+    <img src="docs/screenshot-app-light.png" alt="netmeter uygulama detayı: Google Chrome'un aylık toplamları ve günlük trafik grafiği" width="820">
+  </picture>
+  <br>
+  <sub>Uygulama detayı (demo veri)</sub>
+</p>
+
+## Logo ve ikonlar
+
+Logo [`scripts/generate-logo.ts`](scripts/generate-logo.ts) ile procedural üretilir: seed'li günlük trafik eğrisine göre uzunluğu belirlenen 24 saatlik download/upload bar'ı, bir gauge ibresinin etrafına dizilir. Tek komut `docs/logo.svg`'yi yeniden yazar ve `src-tauri/icons/` altındaki tüm ikonları ondan üretir:
+
+```sh
+pnpm logo   # TypeScript'i doğrudan çalıştırmak için Node.js 22.18+ gerekir
+```
 
 ## Test
 
